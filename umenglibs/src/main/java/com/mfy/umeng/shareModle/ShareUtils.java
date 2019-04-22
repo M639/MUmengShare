@@ -10,6 +10,9 @@ import com.umeng.socialize.media.UMWeb;
 
 /**
  * 友盟分享工具类
+ * 3、6月份新版微信客户端发布后，用户从App中分享消息给微信好友
+ * ，或分享到朋友圈时，开发者将无法获知用户是否分享完成。具体调整点为：
+ * （1）分享接口调用后，不再返回用户是否分享完成事件，即原先的cancel事件和success事件将统一为success事件。
  */
 public class ShareUtils {
 
