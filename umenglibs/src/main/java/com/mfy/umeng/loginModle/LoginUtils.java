@@ -1,5 +1,6 @@
 package com.mfy.umeng.loginModle;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import com.mfy.umeng.shareModle.KUMShareListener;
@@ -23,7 +24,7 @@ public class LoginUtils {
      * 1：微信登录
      * 2：新浪登录
      */
-    public static void login(AppCompatActivity context, int type, final KUMAuthListener listener) {
+    public static void login(Activity context, int type, final KUMAuthListener listener) {
         SHARE_MEDIA state = SHARE_MEDIA.QQ;
         if (type == 0) {
             state = SHARE_MEDIA.QQ;
