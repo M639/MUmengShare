@@ -1,7 +1,6 @@
 package com.mfy.umeng.loginModle;
 
 import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import com.mfy.umeng.shareModle.KUMShareListener;
 import com.mfy.umeng.R;
@@ -85,7 +84,7 @@ public class LoginUtils {
      *      参数可传空，为空则取默认值
      *
      * */
-    public static void shared(AppCompatActivity context, int type, String title,
+    public static void shared(Activity context, int type, String title,
                               String desc, String image, String link,final KUMShareListener listener) {
         if (TextUtils.isEmpty(title)) {
             title = "M的CSDN";
