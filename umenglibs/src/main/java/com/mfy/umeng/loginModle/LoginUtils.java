@@ -111,7 +111,7 @@ public class LoginUtils {
             state = SHARE_MEDIA.WEIXIN_CIRCLE;//微信朋友圈
         }
         ShareUtils.shareWeb(context, link, title
-                , desc, image, R.mipmap.ic_launcher, state
+                , desc, image, R.mipmap.icon, state
         ,listener);
     }
 

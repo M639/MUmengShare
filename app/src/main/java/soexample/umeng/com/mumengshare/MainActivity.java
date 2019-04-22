@@ -155,7 +155,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         , "M的CSDN"
                         ,"快来关注她吧~"
                         , "https://qlogo4.store.qq.com/qzone/2946268162/2946268162/100?1550039733"
-                        , com.mfy.umeng.R.mipmap.ic_launcher,new KUMShareListener(true){
+                        , com.mfy.umeng.R.mipmap.icon,new KUMShareListener(true){
                         });
                 break;
         }
