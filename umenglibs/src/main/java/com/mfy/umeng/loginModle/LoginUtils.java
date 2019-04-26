@@ -52,6 +52,12 @@ public class LoginUtils {
                 String iconurl = map.get("iconurl");
 
                 UmengBean umengBean = new UmengBean();
+                umengBean.setName(uid);
+                umengBean.setIconurl(openid);
+                umengBean.setIconurl(unionid);
+                umengBean.setIconurl(access_token);
+                umengBean.setIconurl(refresh_token);
+                umengBean.setIconurl(expires_in);
                 umengBean.setName(name);
                 umengBean.setGender(gender);
                 umengBean.setIconurl(iconurl);
