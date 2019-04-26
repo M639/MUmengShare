@@ -10,8 +10,10 @@ public class MyApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        UMShareAPI.get(this);//初始化sdk
-        //初始化APP key
+        //设置LOG开关，默认为false
+        UMConfigure.setLogEnabled(true);//友盟登录分享推送通用
+        UMShareAPI.get(this);//初始化友盟登录分享sdk
+        //初始化APP key 友盟登录分享推送通用
         UMConfigure.init(this, "561cae6ae0f55abd990035bf", "", UMConfigure.DEVICE_TYPE_PHONE, "");
 
     }
