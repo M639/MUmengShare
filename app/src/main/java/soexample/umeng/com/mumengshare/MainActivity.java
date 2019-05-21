@@ -6,8 +6,10 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.PopupWindow;
 import android.widget.Toast;
 
 import com.mfy.umeng.loginModle.KUMAuthListener;
@@ -17,6 +19,7 @@ import com.mfy.umeng.shareModle.KUMShareListener;
 import com.mfy.umeng.shareModle.ShareUtils;
 import com.umeng.socialize.UMShareAPI;
 import com.umeng.socialize.bean.SHARE_MEDIA;
+import com.umeng.socialize.shareboard.ShareBoardConfig;
 
 import java.util.Map;
 
@@ -151,7 +154,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.mianban:
                 //带面板分享
-                ShareUtils.shareMianB(this, "https://blog.csdn.net/qq_43143884"
+                ShareUtils.shareMianB(this
+                        ,"https://blog.csdn.net/qq_43143884"
                         , "M的CSDN"
                         ,"快来关注她吧~"
                         , "https://qlogo4.store.qq.com/qzone/2946268162/2946268162/100?1550039733"

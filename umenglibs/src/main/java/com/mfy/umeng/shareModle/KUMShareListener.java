@@ -47,7 +47,7 @@ public class KUMShareListener implements UMShareListener {
     @Override
     public void onCancel(SHARE_MEDIA share_media) {
         if (tag) {
-            Log.i(TAG, "onError " + "分享取消");
+            Log.i(TAG, "onCancel " + "分享取消");
         }
     }
 }
